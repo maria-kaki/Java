@@ -14,6 +14,9 @@ public class Exemplo {
            System.out.print("Aluno aprovado!");
         }
         else {
+            double NF = 10-MS;
+
+            System.out.println("No Exame você precisa tirar: " + NF);
             System.out.println("Escreva o valor do Exame: ");
             double NE = scanner.nextDouble();
             double ME = (MS+NE)/2;

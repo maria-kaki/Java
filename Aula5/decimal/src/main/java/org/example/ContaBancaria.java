@@ -24,4 +24,18 @@ public class ContaBancaria {
             this.titular = titular;
         }
     }
+
+    public void depositar(double valor){
+        if (valor >0){
+            this.saldo += valor;
+        }
+    }
+
+    public boolean sacar(double valor){
+        if (valor > 0 && valor <= saldo){
+            this.saldo -= valor;
+            return true;
+        }
+        return false;
+    }
 }
